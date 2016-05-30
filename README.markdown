@@ -27,6 +27,17 @@ So, to recap, the install script will:
 Installation
 ------------
 
+For vim:
+* Install vim
+* Install vundle based on install docs
+* Install tmux
+* Install solarized gnome terminal colors (for Ubuntu or Linux Mint)
+
+``` bash
+cd ~/dotfiles/
+./solarized.bash
+```
+
 ``` bash
 git clone git://github.com/michaeljsmalley/dotfiles ~/dotfiles
 cd ~/dotfiles

@@ -57,6 +57,7 @@ Plugin 'altercation/vim-colors-solarized'
 "Markdown plugins
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'davejlong/cf-utils.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -102,9 +103,10 @@ autocmd FileType ruby setlocal sw=2 ts=2 sts=2
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256              " enable 256-color mode.
 endif
+  set t_Co=256              " enable 256-color mode.
 
 syntax enable             " enable syntax highlighting (previously syntax on).
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized     " set colorscheme
 
@@ -140,4 +142,8 @@ set nowrap                " don't wrap text
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+set term=screen-256color-bce
+let g:solarized_termcolors=256
+set t_Co=256
+set background=dark
+colorscheme default

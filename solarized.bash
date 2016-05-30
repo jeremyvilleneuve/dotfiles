@@ -19,9 +19,9 @@ source ~/.solarized/tmux-colors-solarized/tmuxcolors.conf" >> ~/.tmux.conf
 # http://twoism.posterous.com/vim-janus-and-solarized-on-ubuntu-done-right
 # git clone https://github.com/altercation/vim-colors-solarized.git
 
-echo "
-set term=screen-256color-bce
-let g:solarized_termcolors=256
-set t_Co=256
-set background=dark
-colorscheme default " >> ~/.vimrc.after
+# echo "
+# set term=screen-256color-bce
+# let g:solarized_termcolors=256
+# set t_Co=256
+# set background=dark
+# colorscheme default " >> ~/.vimrc.after

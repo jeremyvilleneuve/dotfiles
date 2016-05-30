@@ -100,15 +100,12 @@ autocmd FileType ruby setlocal sw=2 ts=2 sts=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256              " enable 256-color mode.
-endif
-  set t_Co=256              " enable 256-color mode.
-
 syntax enable             " enable syntax highlighting (previously syntax on).
-" let g:solarized_termcolors=256
+set term=screen-256color-bce
+let g:solarized_termcolors=256
+set t_Co=256
 set background=dark
-colorscheme solarized     " set colorscheme
+colorscheme default
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,8 +139,3 @@ set nowrap                " don't wrap text
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set term=screen-256color-bce
-let g:solarized_termcolors=256
-set t_Co=256
-set background=dark
-colorscheme default

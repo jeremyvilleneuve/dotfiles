@@ -113,7 +113,7 @@ colorscheme default
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number                " show line numbers
 set relativenumber        " display relative line numbers from current line
-set numberwidth=6         " make the number gutter 6 characters wide
+set numberwidth=4         " make the number gutter 6 characters wide
 set laststatus=2          " last window always has a statusline
 set nohlsearch            " Don't continue to highlight searched phrases
 set incsearch             " But do highlight as you type your search
@@ -121,6 +121,8 @@ set ignorecase            " Make searches case-insensitive
 set ruler                 " Always show info along bottom
 set showmatch
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
+set cursorline
+hi CursorLine cterm=NONE ctermbg=black
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "

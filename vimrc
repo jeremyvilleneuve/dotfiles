@@ -99,21 +99,15 @@ autocmd FileType ruby setlocal sw=2 ts=2 sts=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set t_Co=256              " enable 256-color mode.
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256              " enable 256-color mode.
+endif
+
 syntax enable             " enable syntax highlighting (previously syntax on).
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized     " set colorscheme
 
-
-" Highlight characters that go over 80 columns (by drawing a border on the 81st)
-if exists('+colorcolumn')
-  set colorcolumn=81
-  highlight ColorColumn ctermbg=red
-else
-  highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-  match OverLength /\%81v.\+/
-endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
@@ -121,7 +115,6 @@ endif
 set number                " show line numbers
 set relativenumber        " display relative line numbers from current line
 set numberwidth=6         " make the number gutter 6 characters wide
-set cul                   " highlight current line
 set laststatus=2          " last window always has a statusline
 set nohlsearch            " Don't continue to highlight searched phrases
 set incsearch             " But do highlight as you type your search

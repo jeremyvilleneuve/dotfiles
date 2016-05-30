@@ -11,9 +11,9 @@ git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
 ./gnome-terminal-colors-solarized/install.sh
 
 git clone https://github.com/seebi/tmux-colors-solarized.git
-echo "
-set -g default-terminal \"screen-256color-bce\"
-source ~/.solarized/tmux-colors-solarized/tmuxcolors.conf" >> ~/.tmux.conf
+# echo "
+# set -g default-terminal \"screen-256color-bce\"
+# source ~/.solarized/tmux-colors-solarized/tmuxcolors.conf" >> ~/.tmux.conf
 
 
 # http://twoism.posterous.com/vim-janus-and-solarized-on-ubuntu-done-right

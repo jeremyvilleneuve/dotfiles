@@ -121,8 +121,8 @@ set ignorecase            " Make searches case-insensitive
 set ruler                 " Always show info along bottom
 set showmatch
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
-set cursorline
-hi CursorLine cterm=NONE ctermbg=black
+" set cursorline
+" hi CursorLine cterm=NONE ctermbg=black
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "

@@ -124,6 +124,8 @@ set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%
 " set cursorline
 " hi CursorLine cterm=NONE ctermbg=black
 
+let g:netrw_liststyle=3   " Make the file explorer view show a tree of files
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

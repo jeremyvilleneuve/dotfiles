@@ -155,8 +155,8 @@ set nowrap                " don't wrap text
 
 let g:jsx_ext_required=0  " Allow JSX in normal JS files
 
-set listchars=tab:>-,trail:·
-set list
+" set listchars=tab:>-,trail:·
+" set list
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "

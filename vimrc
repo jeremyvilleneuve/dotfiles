@@ -57,8 +57,19 @@ Plugin 'altercation/vim-colors-solarized'
 "Markdown plugins
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
+"Coldfusion
 Plugin 'davejlong/cf-utils.vim'
 
+"Javascript JSX highlighters
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
+"Syntax linters
+Plugin 'scrooloose/syntastic'
+
+"PHP syntax
+Plugin 'captbaritone/better-indent-support-for-php-with-html'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -89,6 +100,9 @@ filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 autocmd FileType make setlocal noexpandtab
 " In Ruby files, use 2 spaces instead of 4 for tabs
 autocmd FileType ruby setlocal sw=2 ts=2 sts=2
+" In PHP files, use 4 spaces instead of 2 for tabs
+autocmd FileType php setlocal sw=4 ts=4 sts=4
+autocmd FileType phtml setlocal sw=4 ts=4 sts=4
 
 
 
@@ -139,6 +153,23 @@ set smartindent           " automatically insert one extra level of indentation
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
 
+let g:jsx_ext_required=0  " Allow JSX in normal JS files
+
+" set listchars=tab:>-,trail:·
+" set list
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" default starter settings for Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Syntastic plugins
+let g:syntastic_javascript_checkers = ['eslint']

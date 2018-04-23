@@ -1,5 +1,5 @@
 # Explicitly configured $PATH variable
-PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
+PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin:~/.local/bin
 
 export TERM=xterm-256color
 [ -n "$TMUX" ] && export TERM=screen-256color
@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx zsh-syntax-highlighting brew repo sudo knife vagrant bundler web-search)
+plugins=(git osx zsh-syntax-highlighting brew repo sudo knife vagrant bundler web-search zsh-dircolors-solarized)
 
 source $ZSH/oh-my-zsh.sh
 
